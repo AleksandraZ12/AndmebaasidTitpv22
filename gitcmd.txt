@@ -1,0 +1,12 @@
+git init AndmebaasidZokova 
+cd AndmebaasidZokova
+git config --global user.name "Aleksandra Zokova"
+git config --global user.email "teevoids@gmail.com"
+git config --global --list
+git status
+
+если создан новый файл и сохранён, то нужно:
+git add .
+git commit -a -m "põhi ab sõnad on lisatud"
+commit не должен повторяться. 
+

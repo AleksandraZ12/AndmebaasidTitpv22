@@ -63,3 +63,65 @@ nimetus, kestvus, algus_kuupaev, kirjeldus, oppeaineID)
 VALUES (
 'Linux', 200, '2024-08-10', 'Linux modul', 100);
 SELECT * FROM oppeaine;
+
+
+--table opilane
+
+CREATE TABLE opilane(
+opilaneID int Primary key identity(1,1),
+eesnimi varchar(50),
+perenimi varchar(50) NOT NULL,
+aaddress varchar(50),
+hindamineID int;
+oppeaineID int;
+isikukood varchar(50));
+SELECT * FROM opilane;
+INSERT INTO opilane(
+eesnimi, perenimi, aaddress, isikukood)
+VALUES
+('Aleksandra', 'Zokova', 'Rauna 2', '60604167056');
+SELECT * FROM opilane;
+
+INSERT INTO opilane(
+eesnimi, perenimi, aaddress, isikukood)
+VALUES
+('Plushk','Julia','Lasnamaae', '8475856379');
+SELECT * FROM opilane;
+
+
+
+--table hindamine
+
+CREATE TABLE hindamine(
+hindamineID int Primary key identity(1,1),
+oppilaneID int;
+opilaneID int;
+kuupaev date,
+hinne varchar(50));
+SELECT * FROM hindamine;
+INSERT INTO hindamine
+(kuupaev, hinne)
+VALUES
+SELECT * FROM hindamine;
+
+ALTER TABLE hindamine ADD oppeaineID int;
+SELECT * FROM hindamine;
+SELECT * FROM oppeaine;
+UPDATE hindamine SET oppeaineID=1;
+ALTER TABLE hindamine
+ADD FOREIGN KEY (oppeaineID) REFERENCES oppeaine(oppeaineID);
+
+
+ALTER TABLE oppeaine ADD FOREIGN KEY (opetajaID) REFERENCES opetaja(opetajaID);
+
+INSERT INTO hindamine(
+kuupaev, hinne, opilaneID, oppeaineID)
+VALUES (
+'2025-07-11', '232', 150, 140);
+SELECT * FROM hindamine;
+
+SELECT * FROM opetaja;
+SELECT * FROM oppeaine;
+
+SELECT * FROM hindamine;
+SELECT * FROM opilane;

@@ -10,3 +10,11 @@ git add .
 git commit -a -m "põhi ab sõnad on lisatud"
 commit не должен повторяться. 
 
+git remote add origin https://github.com/AleksandraZ12/AndmebaasidTitpv22.git
+git branch -M main
+git push -u origin main - только ее надо 
+ 
+s\303\265na.txt - sõna fail 
+gitcmd.txt
+
+ 

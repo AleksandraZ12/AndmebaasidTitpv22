@@ -266,5 +266,64 @@ insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-11-16', 'VANAT
 insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-04-16', 'Metoprolol Tartrate', 50);
 
 ​
+--tabel kojuvedu
+CREATE TABLE kojuvedu(
+kojuveduID int Primary key identity(1,1),
+aadress varchar(20),
+kuupaev date,
+kellaeg varchar(20),
+kaupID int,
+FOREIGN KEY (kaupID) REFERENCES kaup(kaupID));
 
+select * from kojuvedu;
 
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 876', '2023-12-24', '4:17 AM', 1);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 904', '2024-04-04', '5:10 AM', 2);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('8th Floor', '2024-02-13', '12:30 AM', 3);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('4th Floor', '2024-03-17', '7:21 PM', 4);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 87', '2023-06-13', '1:07 AM', 5);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 13', '2023-06-02', '8:32 AM', 6);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 1286', '2023-10-08', '9:16 PM', 7);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 327', '2023-08-14', '4:12 PM', 8);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 732', '2023-06-16', '8:03 PM', 9);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 62834', '2024-02-28', '4:24 PM', 10);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 5302', '2024-02-02', '4:48 PM', 11);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 382', '2023-07-30', '12:18 AM', 12);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 27', '2023-05-01', '8:46 AM', 13);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 86401', '2023-10-20', '8:37 AM', 14);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('9th Floor', '2023-07-21', '6:55 PM', 15);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 1395', '2023-04-20', '7:24 AM', 16);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 87959', '2023-12-06', '6:47 PM', 17);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('16th Floor', '2024-01-11', '1:22 PM', 18);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 90', '2023-09-20', '9:51 AM', 19);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 580', '2023-07-07', '8:17 PM', 20);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 82', '2023-08-26', '11:49 PM', 21);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 73', '2024-03-15', '1:31 PM', 22);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 1876', '2023-04-15', '1:07 PM', 23);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('12th Floor', '2023-10-14', '1:43 PM', 24);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('19th Floor', '2023-12-03', '5:20 PM', 25);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('3rd Floor', '2023-07-16', '6:23 AM', 26);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 1165', '2023-07-02', '7:43 PM', 27);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 628', '2023-08-10', '10:48 PM', 28);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 208', '2023-06-16', '11:26 PM', 29);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 241', '2023-12-23', '7:34 AM', 30);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 70664', '2023-11-30', '8:34 AM', 31);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 90', '2023-05-06', '12:42 AM', 32);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 96235', '2023-12-01', '7:48 AM', 33);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 58647', '2023-08-24', '8:43 AM', 34);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 88943', '2023-07-11', '7:44 PM', 35);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 86209', '2023-07-13', '1:36 PM', 36);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 1685', '2023-08-24', '2:03 PM', 37);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 1405', '2023-11-16', '6:07 AM', 38);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 372', '2023-10-18', '5:37 AM', 39);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('20th Floor', '2023-11-20', '8:44 PM', 40);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 77', '2023-10-20', '3:26 AM', 41);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 97', '2023-07-25', '9:21 PM', 42);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Apt 147', '2023-04-19', '12:51 AM', 43);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 43937', '2023-09-04', '4:48 AM', 44);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Room 1174', '2023-04-15', '1:05 PM', 45);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 39', '2023-09-21', '1:11 PM', 46);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('17th Floor', '2024-04-10', '6:57 AM', 47);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 10990', '2023-11-03', '3:16 PM', 48);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('Suite 63', '2023-08-16', '6:04 AM', 49);
+insert into kojuvedu (aadress, kuupaev, kellaeg, kaupID) values ('PO Box 26606', '2023-10-26', '1:24 AM', 50);

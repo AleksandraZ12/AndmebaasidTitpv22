@@ -125,3 +125,15 @@ insert into kaup (kaup, kirjeldus) values ('BMW', '5 Series');
 insert into kaup (kaup, kirjeldus) values ('Audi', 'A4');
 
 --tabel kliendikaart
+
+--tabel kaup
+CREATE TABLE kliendikaart(
+kliendikaartID int Primary key identity(1,1),
+kliendikaart varchar(20)
+)
+SELECT * FROM kliendikaart
+
+INSERT INTO kliendikaart(
+kliendikaart)
+VALUES
+('platinue'), ('silver'), ('gold');

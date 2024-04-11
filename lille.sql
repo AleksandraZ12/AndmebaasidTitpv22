@@ -1,4 +1,4 @@
-CREATE DATABASE lillemyykZokova;
+﻿CREATE DATABASE lillemyykZokova;
 USE lillemyykZokova;
 
 --tabel tootaja
@@ -203,4 +203,68 @@ insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) value
 insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-12-16', 48, 48, '1160', 391, 3);
 insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2024-02-01', 49, 49, '157', 853, 1);
 insert into myyk (kuupaev, tootajaID, kaupID, kogus, hind, kliendikaartID) values ('2023-12-04', 50, 50, '37', 467, 2);
+
+--tabel kauplus
+CREATE TABLE kauplus(
+kauplusID int Primary key identity(1,1),
+kuupaev date,
+kirjeldus varchar(20),
+tootajaID int,
+FOREIGN KEY (tootajaID) REFERENCES tootaja(tootajaID));
+
+select * from kauplus;
+
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-05-08', 'Urinary Pain Relief', 1);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-11-26', 'Clobetasol Propionate', 2);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-04-01', 'Dopram', 3);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-10-17', 'Silk', 4);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-02-26', 'Stannum Metallicum', 5);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-09-26', 'GENTAMICIN SULFATE', 6);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-08-26', 'ANBESOL JR', 7);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-02-07', 'BETULA LENTA POLLEN', 8);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-04-01', 'Gelnique', 9);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-03-19', 'Ranitidine Hydrochloride', 10);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-06-14', 'Alcohol', 11);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-02-04', 'CLINIMIX E', 12);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-04-15', 'Alcohol Foaming Hand Sanitizer', 13);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-08-06', 'losartan potassium', 14);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-01-08', 'GMC Medical', 15);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-07-05', 'Clindamycin', 16);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-04-08', 'SYNTHROID', 17);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-10-31', 'Amlodipine Besylate and Benazepril Hydrochloride', 18);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-10-14', 'Mirtazapine', 19);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-12-06', 'Finasteride', 20);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-10-18', 'Ready Foundation', 21);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-03-12', 'Nicardipine Hydrochloride', 22);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-08-07', 'Alprazolam', 23);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-10-06', 'Alcohol Pad', 24);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-09-24', 'Childrens Pain and Fever', 25);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-10-03', 'Doxycycline Hyclate', 26);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-10-16', 'VH Essentials', 27);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-07-24', 'EIGHT HOUR CREAM SKIN PROTECTANT FRAGRANCE FREE', 28);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-01-25', 'lisinopril', 29);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-03-09', 'CEENU', 30);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-04-17', 'Venoforce', 31);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-04-08', 'Belladonna 30C', 32);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-12-01', 'Cefotaxime', 33);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-05-22', 'ASP', 34);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-12-19', 'Homeopathic Lymphatic Clear Formula', 35);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-05-17', 'Candida Yeast', 36);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-07-17', 'Dextroamphetamine Sulfate', 37);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-04-15', 'Clear Cell Salicylic Clarifying Tonic', 38);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-01-26', 'Labetalol Hydrochloride', 39);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-11-07', 'Diltiazem Hydrochloride', 40);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-02-26', 'Leader Nite Time', 41);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-04-10', 'Linzess', 42);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-01-14', 'Childrens Ibuprofen 100', 43);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-02-07', 'Nasal Decongestant PE', 44);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-08-21', 'Cyclobenzaprine hydrochloride', 45);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-07-16', 'Anti-Itch Maximum Strength', 46);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-08-19', 'Carbidopa and Levodopa', 47);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2024-03-21', 'Tabradol', 48);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-11-16', 'VANATAB DX', 49);
+insert into kauplus (kuupaev, kirjeldus, tootajaID) values ('2023-04-16', 'Metoprolol Tartrate', 50);
+
+​
+
 
